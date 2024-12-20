@@ -1,60 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Web Design</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Web Design | Jati Iswara</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="#">Responsive Web</a>
-            </div>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#">Responsive Web</a>
+        </div>
 
-            <ul class="links">
-                <li><a href="hero">Home</a></li>
-                <li><a href="about">About</a></li>
-                <li><a href="services">Sevices</a></li>
-                <li><a href="contacts">Contacts</a></li>
-            </ul>
+        <ul class="links">
+          <li><a href="hero">Home</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="services">Sevices</a></li>
+          <li><a href="contacts">Contacts</a></li>
+        </ul>
 
-            <a href="#" class="action_btn">Get Started</a>
-            <div class="toggle_btn">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </nav>
+        <a href="#" class="action_btn">Get Started</a>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
     </header>
 
     <div class="dropdown_menu">
-        <li><a href="hero">Home</a></li>
-        <li><a href="about">About</a></li>
-        <li><a href="services">Sevices</a></li>
-        <li><a href="contacts">Contacts</a></li>
-        <li><a href="#" class="action_btn">Get Started</a></li>
+      <li><a href="hero">Home</a></li>
+      <li><a href="about">About</a></li>
+      <li><a href="services">Sevices</a></li>
+      <li><a href="contacts">Contacts</a></li>
+      <li><a href="#" class="action_btn">Get Started</a></li>
     </div>
     <main>
-        <section id="hero">
-            <h1>Welcome</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Ad, reiciendis!</p>
-        </section>
+      <section id="hero">
+        <h1>Welcome</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />Ad,
+          reiciendis!
+        </p>
+      </section>
     </main>
 
     <script>
-        const toggleBtn = document.querySelector('.toggle_btn');
-        const toggleBtnIcon = document.querySelector('.toggle_btn i');
-        const dropDownMenu = document.querySelector('.dropdown_menu');
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const toggleBtnIcon = document.querySelector(".toggle_btn i");
+      const dropDownMenu = document.querySelector(".dropdown_menu");
 
-        toggleBtn.onclick = function () {
-            dropDownMenu.classList.toggle('open');
-            const isOpen = dropDownMenu.classList.contains('open');
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open");
+        const isOpen = dropDownMenu.classList.contains("open");
 
-            toggleBtnIcon.classList = isOpen
-                ? 'fa-solid fa-square-xmark'
-                : 'fa-solid fa-bars'
-        }
+        toggleBtnIcon.classList = isOpen
+          ? "fa-solid fa-square-xmark"
+          : "fa-solid fa-bars";
+      };
     </script>
-</body>
+  </body>
 </html>
